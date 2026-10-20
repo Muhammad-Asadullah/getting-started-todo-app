@@ -85,7 +85,7 @@ services:
         - path: ./backend/package.json
           action: rebuild
     labels:
-      traefik.http.routers.backend.rule: (Host(`dbsprogramming.duckdns.org/`) || Host(`localhost`)) && PathPrefix(`/api`)
+      traefik.http.routers.backend.rule: (Host(`asad456.duckdns.org/`) || Host(`localhost`)) && PathPrefix(`/api`)
       traefik.http.services.backend.loadbalancer.server.port: 3000
 
   ###################################################
